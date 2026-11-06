@@ -1,5 +1,13 @@
 // 1)Seleccionamos todos los botones del acordeon 
 
+
+// Menu responsive 
+$(".menu-btn").on("click", function() {
+    $(".menu").slideToggle();
+    $(this).toggleClass("abierto");
+})
+
+
 // Acordeón
 // Aquí van 6 elementos
 $(".acordeon__titulo").on("click", function() {
@@ -9,7 +17,7 @@ $(".acordeon__titulo").on("click", function() {
 
     // Despliega y oculta 
     contenido.slideToggle();
-    
+
     $(this).toggleClass("abierto");
 
 
